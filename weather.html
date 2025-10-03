@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time Weather Predictor app by Sai Keerthan - Get current and forecast weather using OpenWeatherMap API.">
+    <title>Weather Predictor - Sai Keerthan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVFKYVWXEF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PVFKYVWXEF');
+    </script>
+</head>
+<body class="weather-page">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h2>Sai Keerthan</h2>
+            </div>
+            <button class="theme-toggle">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="weather-section">
+        <div class="weather-container">
+            <h2>Weather Predictor</h2>
+            <p class="data-note">* The complete data shown here is derived from OpenWeatherMap through API.</p>
+            <form id="weather-form" class="weather-form">
+                <div class="input-group">
+                    <input type="text" id="city" placeholder="Enter city name" required>
+                    <div id="suggestions" class="suggestions"></div>
+                </div>
+                <button type="submit" class="btn">Get Weather</button>
+            </form>
+            <div id="weather-result" class="weather-result">Weather will appear here.</div>
+            <a href="/" class="btn back-to-home">Back to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Sai Keerthan. All rights reserved.
+    </footer>
+</body>
+</html>

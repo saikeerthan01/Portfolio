@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BMI Calculator app by Sai Keerthan - Calculate your Body Mass Index with customizable units.">
+    <title>BMI Calculator - Sai Keerthan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVFKYVWXEF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PVFKYVWXEF');
+    </script>
+</head>
+<body class="bmi-page">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h2>Sai Keerthan</h2>
+            </div>
+            <button class="theme-toggle">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="bmi-section">
+        <div class="bmi-container">
+            <h2>BMI Calculator</h2>
+            <form id="bmi-form" class="bmi-form">
+                <label for="height">Height</label>
+                <div class="input-group">
+                    <input type="number" id="height" required min="1">
+                    <select id="height-unit">
+                        <option value="cm">cm</option>
+                        <option value="inches">inches</option>
+                        <option value="feet">feet</option>
+                    </select>
+                </div>
+                <label for="weight">Weight</label>
+                <div class="input-group">
+                    <input type="number" id="weight" required min="1">
+                    <select id="weight-unit">
+                        <option value="kg">kg</option>
+                        <option value="pounds">pounds</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Calculate BMI</button>
+            </form>
+            <div id="bmi-result">Your BMI will appear here.</div>
+            <a href="/" class="btn back-to-home">Back to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Sai Keerthan. All rights reserved.
+    </footer>
+</body>
+</html>
